@@ -1,5 +1,8 @@
 package com.ismo.store.metier;
 
-public interface IMetier {
+import java.util.List;
 
+public interface IMetier<T> {
+
+	List<T> getAll();
 }

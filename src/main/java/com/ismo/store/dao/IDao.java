@@ -1,5 +1,9 @@
 package com.ismo.store.dao;
 
-public interface IDao {
+import java.util.List;
+
+public interface IDao<T> {
+	
+	List<T> getAll();
 
 }

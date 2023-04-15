@@ -1,4 +1,4 @@
-package com.exemple.Utils;
+package com.ismo.store.utils;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
