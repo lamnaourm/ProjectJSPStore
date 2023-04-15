@@ -1,0 +1,12 @@
+@charset "ISO-8859-1";
+
+.list {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 30px;
+}
+
+img {
+	width: 100%;
+}

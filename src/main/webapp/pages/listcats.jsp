@@ -9,21 +9,13 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Liste des categories</title>
-<style type="text/css">
-	.list {
-		width: 100%;
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		gap:30px;
-	}
-	
-	img {
-		width: 100%;
-	}
-</style>
+
+<link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 
+	<h1>Liste des categories</h1>
 	<div class="list">
 		<c:forEach var="categorie" items="${requestScope.categories }">
 			<div class="card">
