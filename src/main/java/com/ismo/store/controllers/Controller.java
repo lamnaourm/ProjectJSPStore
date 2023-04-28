@@ -16,7 +16,7 @@ import com.ismo.store.models.Categorie;
 /**
  * Servlet implementation class Controller
  */
-@WebServlet("/Controller")
+@WebServlet(name="controllers",urlPatterns={"/do/*"})
 public class Controller extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
@@ -34,11 +34,15 @@ public class Controller extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		List<Categorie> cats = metier.getAll();
 		
-		request.setAttribute("categories", cats);
 		
-		request.getRequestDispatcher("pages/listcats.jsp").forward(request, response);
+		if(request.getPathInfo().equals("/home")) {
+			List<Categorie> cats = metier.getAll();
+			
+			request.setAttribute("categories", cats);
+			
+			request.getRequestDispatcher("/pages/listcats.jsp").forward(request, response);
+		}
 	}
 
 	/**
