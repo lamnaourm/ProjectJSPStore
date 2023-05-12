@@ -43,7 +43,7 @@
 			<h3 class="col-6">Liste des categories</h3>
 
 			<div class="col-6 text-end">
-				<a href="#!" class="btn btn-success shadow-0">Nouveau Categorie</a>
+				<a href="/ProjectStore/do/addcat" class="btn btn-success shadow-0">Nouveau Categorie</a>
 			</div>
 		</div>
 

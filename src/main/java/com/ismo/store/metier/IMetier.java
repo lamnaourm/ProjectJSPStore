@@ -5,4 +5,5 @@ import java.util.List;
 public interface IMetier<T> {
 
 	List<T> getAll();
+	boolean save(T obj);
 }

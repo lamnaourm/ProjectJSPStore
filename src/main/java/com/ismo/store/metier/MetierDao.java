@@ -16,6 +16,12 @@ public class MetierDao implements IMetier<Categorie> {
 		// TODO Auto-generated method stub
 		return dao.getAll();
 	}
+
+	@Override
+	public boolean save(Categorie obj) {
+		// TODO Auto-generated method stub
+		return dao.save(obj);
+	}
 	
 	
 
