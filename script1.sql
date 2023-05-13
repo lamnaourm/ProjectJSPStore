@@ -4,6 +4,9 @@ use dbstore;
 
 create table t_categorie (id int primary key, name varchar(255), image varchar(1000), creationAt varchar(255), updatedAt varchar(255));
 
+
+truncate table t_categorie;
+
 insert into t_categorie select a.* from JSON_TABLE('[
     {
         "id": 1,
@@ -72,6 +75,13 @@ insert into t_categorie select a.* from JSON_TABLE('[
         "id": 10,
         "name": "Stockage",
         "image": "https://ma.jumia.is/cms/1_2020/00_L2Cat_Nav/Computing/Mobile/Stockage-220x220.jpg",
+        "creationAt": "2023-03-24T02:00:22.000Z",
+        "updatedAt": "2023-03-24T02:00:22.000Z"
+    },
+    {
+        "id": 11,
+        "name": "Telephones portable",
+        "image": "https://ma.jumia.is/cms/000_2022/Z-Categories/2-Telephonie/21-Telephones/300/29.jpg",
         "creationAt": "2023-03-24T02:00:22.000Z",
         "updatedAt": "2023-03-24T02:00:22.000Z"
     }

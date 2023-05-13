@@ -12,6 +12,29 @@
 <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 </head>
 <body>
+<header>
+		<nav id="navbar_top"
+			class="navbar navbar-expand-lg navbar-dark bg-primary">
+			<div class="container">
+				<a class="navbar-brand h1" href="#">Gestion des produits</a>
+				<button class="navbar-toggler" type="button"
+					data-bs-toggle="collapse" data-bs-target="#main_nav">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="main_nav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item"><a class="nav-link" href="#"> Home </a></li>
+						<li class="nav-item"><a class="nav-link" href="#">
+								Categories </a></li>
+						<li class="nav-item"><a class="nav-link" href="#">
+								Produits </a></li>
+					</ul>
+				</div>
+				<!-- navbar-collapse.// -->
+			</div>
+			<!-- container-fluid.// -->
+		</nav>
+	</header>
 	<div class="container my-5">
 
 		<div class="alert alert-primary">
